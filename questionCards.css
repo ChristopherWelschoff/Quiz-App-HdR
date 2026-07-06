@@ -84,7 +84,7 @@
     cursor: pointer;
 }
 
-#showAnswer:hover {
+.answerButton:hover {
     background-color: lightgrey;
 }
 .hidden {
@@ -113,7 +113,7 @@
 @media screen and (min-width: 900px) {
     .quizCards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         margin: 0 auto;
         width: 45%;
