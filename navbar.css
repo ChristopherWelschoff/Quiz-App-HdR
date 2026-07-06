@@ -1,0 +1,8 @@
+.navbar {
+    position: sticky;
+    bottom: 0;
+
+    border: solid;
+    background-color: var(--backgorund-main);
+    
+}
