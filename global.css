@@ -1,0 +1,39 @@
+@import "./title.css";
+@import "./questionCards.css";
+
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --backgorund-main: #ECE3C8;
+    --background-cards: rgba(240, 241, 228, 0.958) ;
+
+    --color-maintext: #241D15; 
+    --color-answer-text: 'EB Garamond', serif;
+    --border-color: #7C5B33;
+    --accent-color: #B8860F;
+    --text-StyleHeader: 'Cinzel Decorative', serif;
+    --font-size: 1rem;
+    --card-margin: 10px;
+    
+
+}
+
+body {
+    font-family: var(--text-StyleHeader);
+    background-color: var(--backgorund-main);
+    color: var(--color-maintext);
+    min-height: 100vh;
+    width: 80%;  
+    margin: 0 auto;
+}
+
+main {
+    flex: 1;
+}

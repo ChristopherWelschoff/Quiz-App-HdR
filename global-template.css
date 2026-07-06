@@ -1,0 +1,192 @@
+/* ==================================================================
+   GLOBAL.CSS – VORLAGE
+   Feste Reihenfolge, die du für jedes neue Projekt wiederverwenden
+   kannst: vom Allgemeinsten (Reset) zum Speziellsten (eigene Klassen)
+   ================================================================== */
+
+
+/* ------------------------------------------------------------------
+   1. IMPORTS
+   Müssen syntaktisch immer ganz oben in der Datei stehen.
+   ------------------------------------------------------------------ */
+/* @import "./header.css"; */
+/* @import "./buttons.css"; */
+
+
+/* ------------------------------------------------------------------
+   2. RESET
+   Vereinheitlicht das Browser-Standardverhalten, bevor irgendetwas
+   anderes greift. *::before / *::after nicht vergessen, da sie sonst
+   die alte box-sizing-Regel behalten (Pseudo-Elemente sind kein DOM,
+   *  allein erfasst sie nicht).
+   ------------------------------------------------------------------ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------------------
+   3. ROOT-VARIABLEN
+   Alle "Regler" zentral an einer Stelle. Änderst du hier einen Wert,
+   zieht es überall nach, wo die Variable verwendet wird.
+   ------------------------------------------------------------------ */
+:root {
+
+    /* --- Farben --- */
+    --bg-primary: #14100e;
+    --bg-secondary: #1f1a17;
+    --text-primary: #ece6de;
+    --text-secondary: #9a8f83;
+    --accent-primary: #a3231f;
+    --accent-secondary: #6b5d4f;
+
+    /* --- Schriftart --- */
+    --font-primary: "Bebas Neue", sans-serif;
+    --font-body: "Lora", serif;
+
+    /* --- Fließende Schriftgrößen ---
+       clamp(MINIMUM, BEVORZUGTER-WERT, MAXIMUM)
+       Faustregel: größeres Element -> größerer vw-Wert (2-6vw üblich) */
+    --font-h1: clamp(32px, 6vw, 70px);
+    --font-h2: clamp(20px, 4vw, 40px);
+    --font-body-size: clamp(16px, 2vw, 20px);
+
+    /* --- Fließende Abstände ---
+       Faustregel: eher kleine vw-Werte (1-3vw) */
+    --spacing-sm: clamp(8px, 1vw, 16px);
+    --spacing-md: clamp(16px, 3vw, 40px);
+    --spacing-lg: clamp(24px, 5vw, 80px);
+
+    /* --- Fließende Bildgrößen ---
+       Faustregel: Höhen eher mit vh + höherem Prozentsatz (30-50vh),
+       weil Fensterhöhen in der Praxis oft kleiner sind als Breiten. */
+    --img-width-sm: clamp(150px, 25vw, 300px);
+    --img-width-md: clamp(250px, 40vw, 600px);
+    --img-width-lg: clamp(300px, 50vw, 900px);
+
+    --img-height-sm: clamp(150px, 25vh, 300px);
+    --img-height-md: clamp(200px, 40vh, 500px);
+
+    --banner-height: clamp(60px, 8vh, 100px);
+}
+
+
+/* ------------------------------------------------------------------
+   4. GRUNDGERÜST (html, body)
+   Voraussetzung für den Sticky-Footer-Trick: header/main/footer
+   müssen direkte Geschwister-Elemente in body sein (nicht
+   ineinander verschachtelt).
+   ------------------------------------------------------------------ */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+
+/* main füllt den kompletten Restplatz -> footer wird automatisch
+   ans untere Ende gedrückt, auch bei wenig Inhalt */
+main {
+    flex: 1;
+}
+
+
+/* ------------------------------------------------------------------
+   4b. GRUNDVERHALTEN FÜR ELEMENT-TYPEN (ohne Klasse)
+   Gilt für ALLE Bilder/Links etc., auch für noch nicht existierende.
+   Eigene Klassen weiter unten überschreiben das gezielt.
+   ------------------------------------------------------------------ */
+img {
+    max-width: 100%;   /* sprengt nie den eigenen Container */
+    height: auto;      /* Seitenverhältnis bleibt automatisch erhalten */
+    display: block;    /* entfernt den kleinen Inline-Abstand unter <img> */
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------
+   5. EIGENE KOMPONENTEN / KLASSEN
+   Ab hier deine spezifischen Bausteine der Seite.
+   ------------------------------------------------------------------ */
+
+.banner {
+    width: 100%;
+    height: var(--banner-height);
+}
+
+/* .headline, .headline_image, .navButtons etc. kommen hier rein,
+   oder in eigene importierte Dateien (siehe Abschnitt 1) */
+
+Media query	Device
+no media query (default)	extra-small, xs, mobile
+(min-width: 600px)	small, sm, large mobile
+(min-width: 900px)	medium, md, tablet
+(min-width: 1200px)	large, lg, desktop
+(min-width: 1536px)	extra-large, xl, large desktop
+
+
+The percentage unit (%) is relative to the related property of the parent or current element - every property has its own rules what it is relative to:
+
+width: 1% is set relative to the parents element width
+
+padding-top: 10% means 10% of the parents height
+
+font-size: 50% means half as big as the parent font-size
+
+transform: translateX(50%) means translate on the x axis by 50% of the current element´s width
+
+Setting the width of a container to 50% of its parent element will make it take up half of the parent's width.
+
+Some tips for using responsive units in CSS#
+Use relative units for all elements that need to scale, such as font sizes, margins, and padding.
+Use absolute units for elements that should not scale, such as the width and height of images.
+Use the rem unit for font sizes, as it will scale consistently across the entire website.
+Use the vw and vh units for elements that should scale relative to the viewport.
+By utilizing these responsive units, you can create websites and web applications that dynamically adjust their layout, sizing, and spacing based on the characteristics of the device and viewport.
+
+
+
+Responsive
+
+Gerne – hier eine geordnete Übersicht der wichtigsten Werkzeuge, viele kennst du aus unserer bisherigen Arbeit schon einzeln, jetzt als Gesamtbild zum Nachschlagen.
+1. Der Viewport-Meta-Tag (Grundvoraussetzung, HTML)
+html<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Ohne das funktioniert responsive CSS auf Mobilgeräten gar nicht richtig – sagt dem Browser, die echte Gerätebreite zu nutzen statt runterzuzoomen.
+2. Relative Einheiten statt fixer Pixel
+EinheitBezugEinsatz%ElternelementBreiten, flexible ContainerremBasis-Schriftgröße (html)Schriftgrößen, Abständevw / vhBrowserfensterVollbild-Bereiche, fließende Größenfrverfügbarer Grid-PlatzCSS Grid Spalten/Zeilen
+3. Flexbox – für eindimensionale Layouts (eine Reihe/Spalte)
+cssdisplay: flex;
+flex-wrap: wrap;   /* bricht sauber um statt zu überlaufen */
+4. CSS Grid – für zweidimensionale Layouts (Reihen UND Spalten gleichzeitig), z.B. deine spätere Charakterkarten-Übersicht
+cssdisplay: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+Das auto-fit, minmax(...) ist ein eigener kleiner Trick: Spalten passen sich automatisch an, ganz ohne Media Query.
+5. clamp() – fließende Werte ohne harte Sprünge (kennst du schon)
+cssfont-size: clamp(1rem, 3vw, 2rem);
+6. Media Queries – für strukturelle Sprünge (kennst du schon)
+css@media (min-width: 768px) { ... }
+7. max-width statt width – verhindert Überlaufen, erlaubt Schrumpfen
+cssimg { max-width: 100%; height: auto; }
+8. object-fit – Bilder zuschneiden statt verzerren
+cssobject-fit: cover;
+9. DevTools Responsive-Modus – zum Testen (kein CSS, aber unverzichtbares Werkzeug)
+Strg+Shift+M, Breite live durchziehen, Bruchstellen finden.
+Die Faustregel zur Reihenfolge beim Bauen, als Eselsbrücke:
+
+Erst Mobile First (kleinste Breite als Basis-CSS schreiben), dann mit min-width-Media-Queries nach oben erweitern – nicht umgekehrt.

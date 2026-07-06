@@ -1,0 +1,112 @@
+
+.singleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 100px;
+    padding: 20px;
+    
+ 
+    background-color: var(--background-cards);
+
+    border: solid 1px var(--border-color);
+    border-top: solid 1px var(--background-main);
+    border-radius: 20px;
+    
+    font-weight: 700;
+    
+    position: relative;
+
+    box-shadow: 0 10px 15px var(--accent-color);
+   
+}
+
+.questionHeader {
+    display: flex;
+    gap: 5px;
+    text-align: start;
+
+    position: absolute;
+    margin-top: -55px;
+    margin-right: -0px;
+    
+    
+}
+
+.questionNo {
+    color: var(--accent-color);
+}
+
+.answers {
+    
+    display: flex;
+    flex-direction: column;
+    
+
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px;
+
+    gap: 15px;
+
+    font-family: var(--color-answer-text);
+    font-weight: 400;
+    border-bottom: dashed 1px var(--border-color);
+    width: 100%;
+    
+}
+
+.radioButton:checked + .answerChoices {
+    background-color: var(--accent-color);
+}
+
+.allChoices {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.answerChoices { 
+    margin-left: 10px;
+    text-align: center;;
+}
+
+
+
+.answerButton {
+    margin-top: 10px;
+    font-family: var(--color-answer-text);
+    font-weight: 600;
+    color: var(--accent-color);
+    background-color: var(--background-main);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+#showAnswer:hover {
+    background-color: lightgrey;
+}
+.hidden {
+    display: none;
+    margin-top: 5px;
+    font-family: var(--color-answer-text);
+    font-weight: 400;
+}
+
+.bookButton {
+    stroke: var(--accent-color);
+
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 230px;
+
+    background-color: var(--background-main);
+    color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    
+}
+.bookButton:hover {
+    transform: scale(1.5);    
+}
