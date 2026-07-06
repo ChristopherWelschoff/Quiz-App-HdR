@@ -1,0 +1,17 @@
+.navbar {
+    position: sticky;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+
+
+    background-color: var(--backgorund-main);
+    border: solid 1px var(--border-color);
+
+}
+
+.navButtons {
+    stroke: var(--color-maintext);
+}
