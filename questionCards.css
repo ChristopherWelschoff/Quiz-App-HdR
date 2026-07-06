@@ -56,8 +56,8 @@
     
 }
 
-.radioButton:checked + .answerChoices {
-    background-color: var(--accent-color);
+.radioButton:hover {
+    cursor: pointer;
 }
 
 .allChoices {

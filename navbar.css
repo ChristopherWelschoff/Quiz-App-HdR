@@ -2,7 +2,16 @@
     position: sticky;
     bottom: 0;
 
-    border: solid;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+
+
     background-color: var(--backgorund-main);
-    
+    border: solid 1px var(--border-color);
+
+}
+
+.navButtons {
+    stroke: var(--color-maintext);
 }
