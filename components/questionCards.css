@@ -96,15 +96,26 @@
 
 .bookButton {
     stroke: var(--accent-color);
+    
 
     align-self: end;
 
     background-color: var(--background-main);
     color: var(--accent-color);
     border: none;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
+
+
+.bookmarkIcon1{
+    fill: var(--accent-color);
+}
+
+.bookmarkIcon.saved {
+    fill: var(--accent-color);
+}
+
+
 .bookButton:hover {
     transform: scale(1.5);    
 }
