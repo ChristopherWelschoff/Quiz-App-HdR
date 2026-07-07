@@ -16,3 +16,7 @@
 .navButtons {
     stroke: var(--color-maintext);
 }
+
+.navbar a.active .navButtons {
+    stroke: var(--accent-color);
+}
