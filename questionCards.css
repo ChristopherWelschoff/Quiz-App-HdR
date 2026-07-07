@@ -109,7 +109,7 @@
     transform: scale(1.5);    
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 425px) {
     .questionHeader {
         position: absolute;
         margin-top: -40px;
