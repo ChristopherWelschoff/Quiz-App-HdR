@@ -1,7 +1,7 @@
-@import "./title.css";
-@import "./questionCards.css";
-@import "./navbar.css";
-@import "./profile.css";
+@import "./components/title.css";
+@import "./components/questionCards.css";
+@import "./components/navbar.css";
+@import "./components/profile.css";
 
 
 
