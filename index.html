@@ -1,348 +1,670 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Herr der Ringe | Quiz</title>
-    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./global.css" />
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <header class="header">
-            <h1 class="headline">Der Herr der Ringe</h1>
-            <p class="subheader">Wähle deine Antwort, dann öffne "Antwort zeigen"</p>
-        </header>
-    
-        <article class="quizCards">
-          <section class="singleCard">
-                <section class="cardHeadline">
-                    <div class="questionHeader">
-                        <p class="questionNo">01</p>
-                        <p class="question">Wer trägt den ring zu 
-                        beginn der reise als "Ringträger"?
-                    </p>
-                    </div>
-                </section>
-            <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice1" class="radioButton" type="radio"><span class="answerChoices">Frodo</span></li>
-            <li class="allChoices"><input name="choice1" class="radioButton" type="radio"><span class="answerChoices">Sam</span></li>
-            <li class="allChoices"><input  name="choice1" class="radioButton" type="radio"><span class="answerChoices">Gandalf</span></li>
-            </ul>
+      <header class="header">
+        <h1 class="headline">Der Herr der Ringe</h1>
+        <p class="subheader">
+          Wähle deine Antwort, dann öffne "Antwort zeigen"
+        </p>
+      </header>
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer1">"Antwort zeigen ▼"</button>
-            <p id="answer-1" class="hidden">
-                    Frodo Beutlin übernimmt den Ring von Bilbo und macht sich auf den Weg nach Mordor.
-            </p>  
-          </section>  
+      <article class="quiz-cards">
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">01</p>
+              <p class="question">
+                Wer trägt den ring zu beginn der reise als "Ringträger"?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice1" class="radio-button" type="radio" /><span
+                class="answer-choices"
+                >Frodo</span
+              >
+            </li>
+            <li class="all-choices">
+              <input name="choice1" class="radio-button" type="radio" /><span
+                class="answer-choices"
+                >Sam</span
+              >
+            </li>
+            <li class="all-choices">
+              <input name="choice1" class="radio-button" type="radio" /><span
+                class="answer-choices"
+                >Gandalf</span
+              >
+            </li>
+          </ul>
 
-        <!-- New Card Starts here!!!!--> 
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer1"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-1" class="hidden">
+            Frodo Beutlin übernimmt den Ring von Bilbo und macht sich auf den
+            Weg nach Mordor.
+          </p>
+        </section>
 
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">02</p>
-                    <p class="question">Wie heißt der Zauberer, der Frodo und die 
-                        Gefährten begleitet?
-                    </p>
-                </div>
-            </section>
-            <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice2" class="radioButton" type="radio">
-                <span class="answerChoices">Saruman</span></li>
-            <li class="allChoices"><input name="choice2" class="radioButton" type="radio">
-                <span class="answerChoices">Gandalf</span></li>
-            <li class="allChoices"><input  name="choice2" class="radioButton" type="radio">
-                <span class="answerChoices">Radagast</span></li>
-            </ul>
+        <!-- New Card Starts here!!!!-->
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer2">"Antwort zeigen ▼"</button>
-            <p id="answer-2" class="hidden">
-                     Gandalf der Graue (später Gandalf der Weiße) begleitet die Gefährten 
-                     von Anfang an und opfert 
-                     sich in den Minen von Moria, um sie vor dem Balrog zu retten.
-            </p>
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">02</p>
+              <p class="question">
+                Wie heißt der Zauberer, der Frodo und die Gefährten begleitet?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice2" class="radio-button" type="radio" />
+              <span class="answer-choices">Saruman</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice2" class="radio-button" type="radio" />
+              <span class="answer-choices">Gandalf</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice2" class="radio-button" type="radio" />
+              <span class="answer-choices">Radagast</span>
+            </li>
+          </ul>
 
-            
-          </section> 
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer2"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-2" class="hidden">
+            Gandalf der Graue (später Gandalf der Weiße) begleitet die Gefährten
+            von Anfang an und opfert sich in den Minen von Moria, um sie vor dem
+            Balrog zu retten.
+          </p>
+        </section>
 
-           <!-- New Card Starts here!!!!--> 
+        <!-- New Card Starts here!!!!-->
 
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">03</p>
-                    <p class="question">In welchem Land/Gebiet leben die
-                        Hobbits ursprünglich?
-                    
-                    </p>
-                </div>
-            </section>
-            <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice3" class="radioButton" type="radio">
-                <span class="answerChoices">Auenland</span></li>
-            <li class="allChoices"><input name="choice3" class="radioButton" type="radio"> 
-                <span class="answerChoices">Rohan</span></li>
-            <li class="allChoices"><input  name="choice3" class="radioButton" type="radio">
-                <span class="answerChoices">Gondor</span></li>
-            </ul>
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">03</p>
+              <p class="question">
+                In welchem Land/Gebiet leben die Hobbits ursprünglich?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice3" class="radio-button" type="radio" />
+              <span class="answer-choices">Auenland</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice3" class="radio-button" type="radio" />
+              <span class="answer-choices">Rohan</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice3" class="radio-button" type="radio" />
+              <span class="answer-choices">Gondor</span>
+            </li>
+          </ul>
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer3">"Antwort zeigen ▼"</button>
-            <p id="answer-3" class="hidden">
-                    Das Auenland ist die friedliche Heimat der Hobbits.
-            </p>
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer3"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-3" class="hidden">
+            Das Auenland ist die friedliche Heimat der Hobbits.
+          </p>
+        </section>
 
-            
-          </section> 
+        <!-- New Card Starts here!!!!-->
 
-           <!-- New Card Starts here!!!!--> 
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">04</p>
+              <p class="question">
+                Wie heißt das Schwert, das aus den zerbrochenen Splittern von
+                Narsil geschmiedet wird?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice4" class="radio-button" type="radio" />
+              <span class="answer-choices">Stich</span>
+            </li>
+            <li class="all-choices">
+              <input name="choic4e" class="radio-button" type="radio" />
+              <span class="answer-choices">Glamdring</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice4" class="radio-button" type="radio" />
+              <span class="answer-choices">Andúril</span>
+            </li>
+          </ul>
 
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">04</p>
-                    <p class="question">Wie heißt das Schwert, das aus den 
-                        zerbrochenen Splittern 
-                        von Narsil geschmiedet wird?
-                    
-                    </p>
-                </div>
-            </section>
-            <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice4" class="radioButton" type="radio">
-                <span class="answerChoices">Stich</span></li>
-            <li class="allChoices"><input name="choic4e" class="radioButton" type="radio">
-                <span class="answerChoices">Glamdring</span></li>
-            <li class="allChoices"><input  name="choice4" class="radioButton" type="radio">
-                <span class="answerChoices">Andúril</span></li>
-            </ul>
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer4"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-4" class="hidden">
+            Andúril ("Flamme des Westens") wird aus den Bruchstücken von Narsil,
+            dem Schwert Isildurs, neu geschmiedet.
+          </p>
+        </section>
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer4">"Antwort zeigen ▼"</button>
-            <p id="answer-4" class="hidden">
-                    Andúril ("Flamme des Westens") wird aus den 
-                    Bruchstücken von Narsil, dem Schwert Isildurs, neu geschmiedet.
-            </p>
+        <!-- New Card Starts here!!!!-->
 
-            
-          </section> 
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">05</p>
+              <p class="question">
+                Welcher Charakter stirbt im Kampf bei Amon Hen?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice5" class="radio-button" type="radio" />
+              <span class="answer-choices">Boromir</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice5" class="radio-button" type="radio" />
+              <span class="answer-choices">Gandalf (der Graue)</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice5" class="radio-button" type="radio" />
+              <span class="answer-choices">Haldir</span>
+            </li>
+          </ul>
 
-           <!-- New Card Starts here!!!!--> 
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer5"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-5" class="hidden">
+            Boromir, ältester Sohn des Truchsess Denethor II. von Gondor, stirbt
+            am Ende von "Die Gefährten" bei Amon Hen nach seinem Versuch, Frodo
+            den Ring zu entreißen, verteidigt er reuevoll Merry und Pippin gegen
+            Uruk-hai, bevor er tödlich verwundet wird.
+          </p>
+        </section>
 
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">05</p>
-                    <p class="question">Welcher Charakter stirbt im Kampf
-                    bei Amon Hen?
+        <!-- New Card Starts here!!!!-->
 
-                    
-                    </p>
-                </div>
-            </section>
-             <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice5" class="radioButton" type="radio">
-                <span class="answerChoices">Boromir</span></li>
-            <li class="allChoices"><input name="choice5" class="radioButton" type="radio">
-                <span class="answerChoices">Gandalf (der Graue)</span></li>
-            <li class="allChoices"><input  name="choice5" class="radioButton" type="radio">
-                <span class="answerChoices">Haldir</span></li>
-            </ul>
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">06</p>
+              <p class="question">Wie heißt der Sohn des Königs von Rohan?</p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice6" class="radio-button" type="radio" />
+              <span class="answer-choices">Éomer</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice6" class="radio-button" type="radio" />
+              <span class="answer-choices">Faramir</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice6" class="radio-button" type="radio" />
+              <span class="answer-choices">Théodred</span>
+            </li>
+          </ul>
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer5">"Antwort zeigen ▼"</button>
-            <p id="answer-5" class="hidden">
-                    Boromir, ältester Sohn des Truchsess Denethor II. von Gondor, stirbt am Ende von "Die Gefährten" bei Amon Hen 
-                    nach seinem Versuch, Frodo den Ring zu entreißen, 
-                    verteidigt er reuevoll Merry und Pippin gegen Uruk-hai, bevor er tödlich verwundet wird.
-            </p>
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer6"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-6" class="hidden">
+            Théodred ist der Sohn König Théodens von Rohan und dessen
+            designierter Thronfolger; er wird zu Beginn der Handlung bei einem
+            Angriff der Uruk-hai bei den Furten des Isen tödlich verwundet und
+            stirbt kurz darauf.
+          </p>
+        </section>
 
-           
-          </section> 
+        <!-- New Card Starts here!!!!-->
 
-           <!-- New Card Starts here!!!!--> 
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">07</p>
+              <p class="question">
+                Welchen Gegenstand benutzt Frodo im Kampf gegen Kankra?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice7" class="radio-button" type="radio" />
+              <span class="answer-choices">Einen Palantír</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice7" class="radio-button" type="radio" />
+              <span class="answer-choices">Den Ring</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice7" class="radio-button" type="radio" />
+              <span class="answer-choices">Das Phiolen-Licht von Eärendil</span>
+            </li>
+          </ul>
 
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">06</p>
-                    <p class="question">Wie heißt der Sohn des Königs von Rohan?
-                   
-                    </p>
-                </div>
-            </section>
-            <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice6" class="radioButton" type="radio">
-                <span class="answerChoices">Éomer</span></li>
-            <li class="allChoices"><input name="choice6" class="radioButton" type="radio">
-                <span class="answerChoices">Faramir</span></li>
-            <li class="allChoices"><input  name="choice6" class="radioButton" type="radio">
-                <span class="answerChoices">Théodred</span></li>
-            </ul>
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer7"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-7" class="hidden">
+            Galadriel schenkt Frodo eine Phiole mit dem Licht des Sterns von
+            Eärendil — es rettet ihn in Kankras Höhle..
+          </p>
+        </section>
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer6">"Antwort zeigen ▼"</button>
-            <p id="answer-6" class="hidden">
-                        Théodred ist der Sohn König Théodens von 
-                        Rohan und dessen designierter Thronfolger; 
-                        er wird zu Beginn der Handlung bei einem Angriff 
-                        der Uruk-hai bei den Furten des Isen tödlich verwundet 
-                        und stirbt kurz darauf.
-            </p>
+        <!-- New Card Starts here!!!!-->
 
-            
-          </section> 
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">08</p>
+              <p class="question">
+                Wie heißt Gollums ursprünglicher Name, bevor ihn der Ring
+                korrumpiert hat?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice8" class="radio-button" type="radio" />
+              <span class="answer-choices">Háegol</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice8" class="radio-button" type="radio" />
+              <span class="answer-choices">Sméagol</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice8" class="radio-button" type="radio" />
+              <span class="answer-choices">Déagol</span>
+            </li>
+          </ul>
 
-           <!-- New Card Starts here!!!!--> 
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer8"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-8" class="hidden">
+            Sméagol war ein Hobbit-ähnliches Wesen (Stoor), bevor ihn der Ring
+            über Jahrhunderte zu Gollum verformte. Déagol war der Freund, den er
+            für den Ring ermordete..
+          </p>
+        </section>
 
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">07</p>
-                    <p class="question">Welchen Gegenstand benutzt Frodo im Kampf
-                        gegen Kankra?
-                    
-                    </p>
-                </div>
-            </section>
-             <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice7" class="radioButton" type="radio">
-                <span class="answerChoices">Einen Palantír</span></li>
-            <li class="allChoices"><input name="choice7" class="radioButton" type="radio">
-                <span class="answerChoices">Den Ring</span></li>
-            <li class="allChoices"><input  name="choice7" class="radioButton" type="radio">
-                <span class="answerChoices">Das Phiolen-Licht von Eärendil</span></li>
-            </ul>
+        <!-- New Card Starts here!!!!-->
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer7">"Antwort zeigen ▼"</button>
-            <p id="answer-7" class="hidden">
-                    Galadriel schenkt Frodo eine Phiole mit dem Licht 
-                    des Sterns von Eärendil — es rettet ihn in Kankras Höhle..
-            </p>
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">09</p>
+              <p class="question">
+                Welche der neun Ringe der Menschen trug einst als sterblicher
+                König das Königreich von Angmar?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice9" class="radio-button" type="radio" />
+              <span class="answer-choices">Der Mund von Sauron</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice9" class="radio-button" type="radio" />
+              <span class="answer-choices">Der Hexenkönig</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice9" class="radio-button" type="radio" />
+              <span class="answer-choices">Khamûl der Ostling</span>
+            </li>
+          </ul>
 
-           
-          </section> 
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer9"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-9" class="hidden">
+            Der Hexenkönig von Angmar ist der Anführer der Nazgûl und einer von
+            zwei, dessen früherer Name/Titel überliefert ist — er wird später
+            von Éowyn und Merry auf den Pelennor-Feldern besiegt.
+          </p>
+        </section>
 
-           <!-- New Card Starts here!!!!--> 
+        <!-- New Card Starts here!!!!-->
 
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">08</p>
-                    <p class="question">Wie heißt Gollums ursprünglicher Name, 
-                        bevor ihn der Ring korrumpiert hat?
-                    
-                    </p>
-                </div>
-            </section>
-             <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice8" class="radioButton" type="radio">
-                <span class="answerChoices">Háegol</span></li>
-            <li class="allChoices"><input name="choice8" class="radioButton" type="radio">
-                <span class="answerChoices">Sméagol</span></li>
-            <li class="allChoices"><input  name="choice8" class="radioButton" type="radio">
-                <span class="answerChoices">Déagol</span></li>
-            </ul>
+        <section class="single-card">
+          <section class="card-headline">
+            <div class="question-header">
+              <p class="question-no">10</p>
+              <p class="question">
+                Wie viele Ringe der Macht wurden insgesamt geschmiedet
+                (Menschen, Zwerge, Elben und der Eine Ring zusammengerechnet)?
+              </p>
+            </div>
+          </section>
+          <a href="bookmark.html" class="book-button"
+            ><svg
+              class="bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+          <ul class="answers">
+            <li class="all-choices">
+              <input name="choice10" class="radio-button" type="radio" />
+              <span class="answer-choices">19</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice10" class="radio-button" type="radio" />
+              <span class="answer-choices">20</span>
+            </li>
+            <li class="all-choices">
+              <input name="choice10" class="radio-button" type="radio" />
+              <span class="answer-choices">16</span>
+            </li>
+          </ul>
 
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer8">"Antwort zeigen ▼"</button>
-            <p id="answer-8" class="hidden">
-                    Sméagol war ein Hobbit-ähnliches Wesen (Stoor), 
-                    bevor ihn der Ring über Jahrhunderte zu Gollum verformte. 
-                    Déagol war der Freund, den er für den Ring ermordete..
-            </p>
-
-           
-          </section> 
-
-           <!-- New Card Starts here!!!!--> 
-
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">09</p>
-                    <p class="question">Welche der neun Ringe der Menschen 
-                        trug einst als sterblicher König das Königreich von Angmar?
-                    
-                    </p>
-                </div>
-            </section>
-            <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-            </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice9" class="radioButton" type="radio">
-                <span class="answerChoices">Der Mund von Sauron</span></li>
-            <li class="allChoices"><input name="choice9" class="radioButton" type="radio">
-                <span class="answerChoices">Der Hexenkönig</span></li>
-            <li class="allChoices"><input  name="choice9" class="radioButton" type="radio">
-                <span class="answerChoices">Khamûl der Ostling</span></li>
-            </ul>
-
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer9">"Antwort zeigen ▼"</button>
-            <p id="answer-9" class="hidden">
-                    Der Hexenkönig von Angmar ist der Anführer der Nazgûl und einer von zwei, 
-                    dessen früherer Name/Titel überliefert ist — er wird 
-                    später von Éowyn und Merry auf den Pelennor-Feldern besiegt.
-            </p>
-
-            
-          </section> 
-
-           <!-- New Card Starts here!!!!--> 
-
-          <section class="singleCard">
-            <section class="cardHeadline">
-                <div class="questionHeader">
-                    <p class="questionNo">10</p>
-                    <p class="question">Wie viele Ringe der Macht wurden insgesamt 
-                        geschmiedet (Menschen, Zwerge, Elben und der 
-                        Eine Ring zusammengerechnet)?
-                    
-                    </p>
-                </div>
-            </section>
-             <a href="bookmark.html" class="bookButton"><svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-             </a>
-            <ul class="answers">
-            <li class="allChoices"><input name="choice10" class="radioButton" type="radio">
-                <span class="answerChoices">19</span></li>
-            <li class="allChoices"><input name="choice10" class="radioButton" type="radio">
-                <span class="answerChoices">20</span></li>
-            <li class="allChoices"><input  name="choice10" class="radioButton" type="radio">
-                <span class="answerChoices">16</span></li>
-            </ul>
-
-            <button aria-label="antwort zeigen" class="answerButton" id="showAnswer10">"Antwort zeigen ▼"</button>
-            <p id="answer-10" class="hidden">
-                    3 Ringe für die Elbenkönige, 7 für die Zwergenherrscher, 
-                    9 für die Menschen, plus der Eine Ring von Sauron = 
-                    insgesamt 20 Ringe.
-            </p>
-          </section> 
-        </article>    
+          <button
+            aria-label="antwort zeigen"
+            class="answer-button"
+            id="showAnswer10"
+          >
+            "Antwort zeigen ▼"
+          </button>
+          <p id="answer-10" class="hidden">
+            3 Ringe für die Elbenkönige, 7 für die Zwergenherrscher, 9 für die
+            Menschen, plus der Eine Ring von Sauron = insgesamt 20 Ringe.
+          </p>
+        </section>
+      </article>
     </main>
     <footer class="navbar">
-        <a href="index.html" class="active"><svg class="navButtons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-        </a>
-        <a href="bookmark.html"><svg class="navButtons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
-        </a>
-        <a href="profile.html"><svg class="navButtons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
-        </a>
+      <a href="index.html" class="active"
+        ><svg
+          class="nav-buttons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+        </svg>
+      </a>
+      <a href="bookmark.html"
+        ><svg
+          class="nav-buttons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+          />
+        </svg>
+      </a>
+      <a href="profile.html"
+        ><svg
+          class="nav-buttons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M17.925 20.056a6 6 0 0 0-11.851.001" />
+          <circle cx="12" cy="11" r="4" />
+          <circle cx="12" cy="12" r="10" />
+        </svg>
+      </a>
     </footer>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
