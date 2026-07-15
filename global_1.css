@@ -38,12 +38,17 @@
 
   font-weight: 700;
 
-  position: relative;
+  /* position: relative; */
 
   box-shadow: 0 10px 15px var(--accent-color);
 }
 
-.question-header {
+.card-headline {
+  display: flex;
+  gap: 20px
+}
+
+/* .question-header {
   display: flex;
   gap: 5px;
   text-align: start;
@@ -51,7 +56,7 @@
   position: absolute;
   margin-top: -55px;
   margin-right: -0px;
-}
+} */
 
 .question-no {
   color: var(--accent-color);
