@@ -1,9 +1,10 @@
-/* @import "./components/title.css";
-@import "./components/questionCards.css";
+@import "./components/title.css";
+@import "./components/card.css";
+@import "./components/media-querries.css";
+@import "./components/profile.css";
 @import "./components/navbar.css";
-@import "./components/profile.css"; */
 
-@import "./global_1.css";
+
 
 *,
 *::before,

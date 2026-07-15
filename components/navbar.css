@@ -1,0 +1,20 @@
+.navbar {
+  position: sticky;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: 25px;
+
+  background-color: var(--backgorund-main);
+  border: solid 1px var(--border-color);
+}
+
+.nav-buttons {
+  stroke: var(--color-maintext);
+}
+
+.navbar a.active .nav-buttons {
+  stroke: var(--accent-color);
+}
