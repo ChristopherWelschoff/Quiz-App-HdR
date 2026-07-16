@@ -1,0 +1,67 @@
+@media screen and (min-width: 900px) {
+  .quiz-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    width: 110%;
+  }
+
+  .profile-page {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .cards-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .settings {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quiz-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .navbar {
+    position: sticky;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 25px;
+
+    background-color: var(--backgorund-main);
+    border: solid 1px var(--border-color);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .quiz-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+

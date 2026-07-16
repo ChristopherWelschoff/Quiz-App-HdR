@@ -91,14 +91,10 @@
   cursor: pointer;
 }
 
-.bookmark-icon-1 {
+.bookmark-icon {
   fill: var(--accent-color);
 }
 
-.bookmark-icon.saved {
-  fill: var(--accent-color);
-}
-
-.book-button:hover {
+/* .book-button:hover {
   transform: scale(1.5);
-}
+} */

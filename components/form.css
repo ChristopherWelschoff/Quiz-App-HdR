@@ -1,0 +1,29 @@
+.all-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;   
+}
+
+.text-area {
+  font-family: var(--color-answer-text);
+  width: 100%;
+}
+
+.tags-section {
+    display: flex;
+    flex-direction: column; 
+}
+
+.submit-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-button {
+    font-family: var(--text-StyleHeader);
+
+    background-color: var(--backgorund-main);
+    border: solid 1px;
+    border-color: var(--border-color);
+}

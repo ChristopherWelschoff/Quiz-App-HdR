@@ -1,9 +1,9 @@
 @import "./components/title.css";
 @import "./components/card.css";
-@import "./components/media-querries.css";
+@import "./components/media-queries.css";
 @import "./components/profile.css";
 @import "./components/navbar.css";
-
+@import "./components/form.css";
 
 
 *,

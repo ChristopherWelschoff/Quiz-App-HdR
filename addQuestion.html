@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Herr der Ringe | Quiz</title>
     <link rel="stylesheet" href="./global.css" />
+    <script src="./components/addQuestion.js" defer></script>
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap"
@@ -19,38 +20,43 @@
     <main>
       <header class="header">
         <h1 class="headline">Der Herr der Ringe</h1>
-        <p class="subheader">"About me | Einstellungen"</p>
+        <p class="subheader">"Hier kannst du eigene Fragen erstellen"</p>
       </header>
 
-      <article class="profile-page">
-        <section class="cards-profile">
-          <div class="about-me-infos">
-            <div class="aboutme-infos -profile">
-              <img class="-profile-img" src="./assets/anzug_foto_ich.JPG" />
-              <p class="-name">Christopher Welschoff</p>
-            </div>
-            <p class="about-me-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
-              sed quae autem ut minima, nobis delectus eaque iste ex facilis
-              magni molestiae, earum quisquam voluptatum, ad totam aspernatur
-              beatae ratione.
-            </p>
-          </div>
-        </section>
+      <form class="all-form" data-js="form">
+        <article class="question-text">
+          <p>Deine Frage:</p>
 
-        <section class="user-infos">
-          <div class="info-images"></div>
-        </section>
+          <textarea class="text-area" data-js="question" rows="6"> </textarea>
+        </article>
 
-        <section class="settings">
-          <p class="setting-header">Settings</p>
-          <div class="setting-options">
-            <p class="option">Dark Mode</p>
-            <img class="switch" src="./assets/switch.png" alt="switch.png" />
-          </div>
-        </section>
+        <article class="answer-text">
+          <p>Deine Antwort:</p>
+
+          <textarea class="text-area" data-js="answer" rows="6"> </textarea>
+        </article>
+
+        <article class="tags-section">
+          <label for="tags">Tags:</label>
+          <input
+            type="text"
+            class="tags"
+            name="tag"
+            data-js="tags"
+            placeholder="Trage dein 'tag' zu frage ein z.B Charaktere"
+          />
+        </article>
+
+        <article class="submit-area">
+          <button type="submit" class="submit-button" data-js="submit-button">Frage hinzufügen</button>
+        </article>
+      </form>
+
+      <article class="quiz-cards">
+        
       </article>
     </main>
+
     <footer class="navbar">
       <a href="index.html"
         ><svg
@@ -89,25 +95,25 @@
           />
         </svg>
       </a>
-      <a href="./addQuestion.html">
-      <svg class="nav-buttons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-circle-plus-icon lucide-circle-plus"
-      >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M8 12h8" />
-        <path d="M12 8v8" />
-      </svg>
+      <a href="./addQuestion.html" class="active">
+        <svg
+          class="nav-buttons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M8 12h8" />
+          <path d="M12 8v8" />
+        </svg>
       </a>
-      <a href="profile.html" class="active"
+      <a href="profile.html"
         ><svg
           class="nav-buttons"
           xmlns="http://www.w3.org/2000/svg"
