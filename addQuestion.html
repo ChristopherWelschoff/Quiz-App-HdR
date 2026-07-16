@@ -27,13 +27,15 @@
         <article class="question-text">
           <p>Deine Frage:</p>
 
-          <textarea class="text-area" data-js="question" rows="6"> </textarea>
+          <textarea class="text-area" data-js="question" rows="6" maxlength="150"> </textarea>
+          <p class="text-area" data-js="letters-left-question">Noch 150 zeichen</p>
         </article>
 
         <article class="answer-text">
           <p>Deine Antwort:</p>
 
-          <textarea class="text-area" data-js="answer" rows="6"> </textarea>
+          <textarea class="text-area" data-js="answer" rows="6" maxlength="150"> </textarea>
+          <p class="text-area" data-js="letters-left-answer">Noch 150 zeichen</p>
         </article>
 
         <article class="tags-section">
@@ -43,7 +45,7 @@
             class="tags"
             name="tag"
             data-js="tags"
-            placeholder="Trage dein 'tag' zu frage ein z.B Charaktere"
+            placeholder="Trage dein 'tag' zur frage ein z.B Charaktere"
           />
         </article>
 

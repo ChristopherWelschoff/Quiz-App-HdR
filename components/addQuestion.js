@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
 
   form.after(newCard);
 
-  newCard.innerHTML = `  <p class="question-no">00</p>
+  newCard.innerHTML = `  <p class="question-no"></p>
             <p class="question">
               ${questiontData.value}
             </p>
@@ -61,4 +61,25 @@ form.addEventListener("submit", (event) => {
           <p id="answer-5" class="hidden">
            ${answerData.value}
           </p>`;
+});
+const lettersLeftQuestion = document.querySelector(
+  '[data-js="letters-left-question"]',
+);
+const lettersLeftAnswer = document.querySelector(
+  '[data-js="letters-left-answer"]',
+);
+
+function updateLetterCount (textarea, text) {
+    const result = 150 -textarea.value.length;
+    text.textContent = `Noch ${result} zeichen`;
+    
+}
+
+questiontData.addEventListener("input", () => {
+  updateLetterCount(questiontData, lettersLeftQuestion );
+});
+
+
+answerData.addEventListener("input", () => {
+  updateLetterCount(answerData, lettersLeftAnswer);
 });
