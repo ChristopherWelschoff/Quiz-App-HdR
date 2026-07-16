@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Herr der Ringe | Quiz</title>
     <link rel="stylesheet" href="./global.css" />
+    <script src="./components/darkMode.js" defer></script>
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap"
@@ -26,7 +27,7 @@
         <section class="cards-profile">
           <div class="about-me-infos">
             <div class="aboutme-infos -profile">
-              <img class="-profile-img" src="./assets/anzug_foto_ich.JPG" />
+              <img class="-profile-img" src="./assets/anzug_foto_ich.JPG"  />
               <p class="-name">Christopher Welschoff</p>
             </div>
             <p class="about-me-text">
@@ -46,7 +47,8 @@
           <p class="setting-header">Settings</p>
           <div class="setting-options">
             <p class="option">Dark Mode</p>
-            <img class="switch" src="./assets/switch.png" alt="switch.png" />
+            <img class="switch" src="./assets/toggle-left.png" alt="switch.png" data-js="toggle-light"/>
+            
           </div>
         </section>
       </article>
@@ -100,7 +102,6 @@
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="lucide lucide-circle-plus-icon lucide-circle-plus"
       >
         <circle cx="12" cy="12" r="10" />
         <path d="M8 12h8" />

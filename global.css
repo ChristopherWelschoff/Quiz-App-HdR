@@ -46,7 +46,16 @@ main {
   margin: 0 auto;
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
+
+.dark-mode{
+  --backgorund-main: black;
+  --background-cards: rgba(19, 20, 25, 0.958);
+
+  --color-maintext: #855b2c;
+  --color-answer-text: "EB Garamond", serif;
+  --border-color: #7c5b33;
+  --accent-color: #b8860f;
+  --text-StyleHeader: "Cinzel Decorative", serif;
+  --font-size: 1rem;
+  --card-margin: 10px;
 }
